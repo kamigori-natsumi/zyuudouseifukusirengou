@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="sec06">
+        <div class="sec06Wrapper">
+            <div class="sec06titleBar">
+                <h2>お問い合わせ</h2>
+                <img src="img/sec06bar.png" alt="下線">
+            </div>
+
+            <form>
+                <div class="sec06form">
+                    <div class="sec06radioWrapper">
+                        <p>お問い合わせされた方</p>
+                        <div class="sec06radio">
+                            <label><input type="radio" name="contactType" value="柔道整復師様 " checked="checked">柔道整復師様
+                            </label>
+                            <label><input type="radio" name="contactType" value="協賛企業様">協賛企業様</label>
+                            <label><input type="radio" name="contactType" value="その他">その他</label>
+                        </div>
+                    </div>
+
+                    <div class="sec06inputText">
+                        <p>お名前</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="sec06inputText">
+                        <p>御社名</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="sec06inputText">
+                        <p>メールアドレス</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="sec06inputText">
+                        <p>電話番号</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="sec06inputText">
+                        <p>FAX番号</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="sec06inputText">
+                        <p>該当地区</p>
+                        <select name="time">
+                            <option value="選択してください">▼選択してください</option>
+                            <option value="兵庫県柔道整復師協同組合">兵庫県柔道整復師協同組合</option>
+                            <option value="京都府柔道整復師協同組合">京都府柔道整復師協同組合</option>
+                            <option value="奈良県柔道整復師協同組合">奈良県柔道整復師協同組合</option>
+                            <option value="滋賀県柔道整復師協同組合">滋賀県柔道整復師協同組合</option>
+                            <option value="和歌山県柔道整復師協同組合">和歌山県柔道整復師協同組合</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="sec06inputText">
+                    <p>お問い合わせ内容</p>
+                    <textarea name="message" cols="70" rows="8"></textarea>
+                </div>
+                <p class="sec06text"><input type="submit" value="送信"></p>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
