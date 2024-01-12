@@ -1,3 +1,12 @@
+
+window.addEventListener('load', function () {
+    setTimeout(function(){   
+    let loadingBg = document.querySelector('.loaderContainer');
+    loadingBg.classList.add('activeLoad');
+},3000);
+});
+
+
 const fuwawa = document.querySelectorAll('.sec02FukidaItem');
 function fuwawawa() {
     fuwawa.forEach(function (target) {
