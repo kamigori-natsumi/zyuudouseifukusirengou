@@ -7,6 +7,19 @@ window.addEventListener('load', function () {
 });
 
 
+const faceBani = document.querySelector('.sec01fb');
+function faceb(){
+    const targetRect = faceBani.getBoundingClientRect();
+    if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
+        faceBani.classList.add('sec01fbAni'); 
+    } else {
+        faceBani.classList.remove('sec01fbAni');
+    }
+};
+
+window.addEventListener('scroll', faceb);
+
+
 const fuwawa = document.querySelectorAll('.sec02FukidaItem');
 function fuwawawa() {
     fuwawa.forEach(function (target) {
@@ -19,6 +32,37 @@ function fuwawawa() {
     });
 };
 window.addEventListener('scroll', fuwawawa);
+
+
+
+
+const fadein = document.querySelectorAll('.sec03img');
+function fadeinn() {
+    fadein.forEach(function (target) {
+        const targetRect = target.getBoundingClientRect();
+        if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
+            target.classList.add('fadeinn');
+        } else {
+            target.classList.remove('fadeinn');
+        }
+    });
+};
+window.addEventListener('scroll', fadeinn);
+
+
+const fadein02 = document.querySelectorAll('.sec03merit');
+function fadeinn() {
+    fadein02.forEach(function (target) {
+        const targetRect = target.getBoundingClientRect();
+        if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
+            target.classList.add('fadeinn');
+        } else {
+            target.classList.remove('fadeinn');
+        }
+    });
+};
+window.addEventListener('scroll', fadeinn);
+
 
 
 const bounce = document.querySelectorAll('.sec04title');
@@ -114,3 +158,16 @@ const swiper02 = new Swiper(".swiper02", {
     // centeredSlides: true,
     // spaceBetween: 5,
 });
+
+
+const handslide = document.querySelector('.sec04Hand');
+function handslideanime() {
+        const targetRect = handslide.getBoundingClientRect();
+        if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
+            handslide.classList.add('sec04Hand');
+        } else {
+            handslide.classList.remove('sec04Hand');
+        }
+    };
+
+window.addEventListener('scroll', handslideanime);
