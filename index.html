@@ -18,11 +18,18 @@
 
 <body>
 
-    <section class="loaderContainer">
-        <div class="loader01"></div>
-        <div class="loadHand">
-            <div class="loadHand01"><img src="img/loadLefthand.png" alt="手"></div>
-            <div class="loadHand02"><img src="img/loadRighthand.png" alt="手"></div>
+    <section class="loadingWrapper">
+        <div class="loaderContainer">
+            <div class="loadingBackImg">
+                <svg class="wheel" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arc" d="M50 10 A 40 40 0 1 1 49.9999 10" />
+                </svg>
+            </div>
+            <!-- <div class="loader01"></div> -->
+            <div class="loadHand">
+                <div class="loadHand01"><img src="img/loadLefthand.png" alt="手"></div>
+                <div class="loadHand02"><img src="img/loadRighthand.png" alt="手"></div>
+            </div>
         </div>
     </section>
 
@@ -116,7 +123,7 @@
         <div id="sec01Text">
             <h2>ごあいさつ</h2>
             <p>近畿柔道整復師協同組合連合会のホームページにお越し頂きまして誠にありがとうございます。
-                この連合会は兵庫県。京都府。滋賀県。和歌山県。奈良県。の1府4県の協同組合の共同体で各県の
+                この連合会は兵庫県、京都府、滋賀県、和歌山県、奈良県の1府4県の協同組合の共同体で各県の
                 会員が日常使う医療機器、消耗品、各種保険関係の団体保険、医療事故保険等福利厚生の充実、学術大会の協賛など情報交換を共有して組合員に多種多様な商品を安価で販売しております。
                 <br>広告募集は1年間通して行っています。一般の企業から個人商店さん迄そしてネット販売している方も広告の応募も可能です。
                 <br>是非ご活用の程宜しくお願申し上げます。
@@ -127,8 +134,8 @@
 
             <div class="sec01fbWrapper">
                 <h2 id="facebook">Face book</h2>
-                <div class="sec01fb sec01fbAni">
-                    <img src="img/sec01_fb.png" alt="Facebooklogo">
+                <div class="sec01fb">
+                    <img src="img/sec01_fb.png" class="sec01fbanime" alt="Facebooklogo">
                 </div>
                 <div id="fb-root"></div>
                 <script async defer crossorigin="anonymous"

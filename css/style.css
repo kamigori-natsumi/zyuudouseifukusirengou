@@ -391,58 +391,114 @@ th {
   font-weight: bold;
 }
 
-.loaderContainer {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.loadingWrapper {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/loadingBackImg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+}
+.loadingWrapper .loaderContainer {
   width: 29%;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
-  background-color: #F6EFE4;
   border-radius: 4px;
   box-shadow: 0 16px 12px -8px rgba(0, 0, 0, 0.1254901961);
   position: fixed;
   z-index: 100000000;
+  /* .loader01 {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: solid 4px;
+      border-color: #000000 #00000010 #00000010;
+      position: relative;
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      animation-name: spin;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      z-index: 10000000000000;
+  } */
 }
-.loaderContainer .loader01 {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: solid 4px;
-  border-color: #000000 rgba(0, 0, 0, 0.062745098) rgba(0, 0, 0, 0.062745098);
-  position: relative;
+.loadingWrapper .loaderContainer .loadingBackImg {
+  width: 100%;
+  height: 100vh;
+}
+.loadingWrapper .loaderContainer .loadingBackImg .wheel {
   position: absolute;
-  inset: 0;
-  margin: auto;
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  z-index: 10000000000000;
+  width: 100%;
+  height: 100%;
+}
+.loadingWrapper .loaderContainer .loadingBackImg .wheel .arc {
+  fill: none;
+  stroke: #EDE3D3;
+  /* アークの色 */
+  stroke-width: 5000;
+  /* アークの太さ */
+  stroke-dasharray: 0 1000;
+  /* 初期状態: 線が表示されていない */
+  animation: drawArc 3s ease-in-out forwards;
+  /* アニメーション時間: 3秒 */
+}
+.loadingWrapper .loaderContainer .loadHand {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+}
+.loadingWrapper .loaderContainer .loadHand .loadHand01 {
+  max-width: 2000px;
+  animation: loading01 3s ease-in-out forwards;
+}
+.loadingWrapper .loaderContainer .loadHand .loadHand01 img {
+  width: 100%;
+}
+.loadingWrapper .loaderContainer .loadHand .loadHand02 {
+  max-width: 2000px;
+  animation: loading02 3s ease-in-out forwards;
+}
+.loadingWrapper .loaderContainer .loadHand .loadHand02 img {
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .loadingWrapper .loaderContainer .loadHand .loadHand01 {
+    max-width: 800px;
+  }
+  .loadingWrapper .loaderContainer .loadHand .loadHand02 {
+    max-width: 800px;
+  }
+}
+
+.activeLoad {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes drawArc {
+  to {
+    stroke-dasharray: 1000 1000;
+    /* アークの長さ: 100% */
+  }
 }
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
-}
-.loaderContainer .loadHand {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5rem;
-}
-.loaderContainer .loadHand .loadHand01 {
-  width: 500px;
-  animation: loading01 3s ease-in-out forwards;
-}
-.loaderContainer .loadHand .loadHand01 img {
-  width: 100%;
-}
-.loaderContainer .loadHand .loadHand02 {
-  width: 500px;
-  animation: loading02 3s ease-in-out forwards;
-}
-.loaderContainer .loadHand .loadHand02 img {
-  width: 100%;
 }
 @keyframes loading01 {
   0% {
@@ -464,12 +520,6 @@ th {
     opacity: 1;
   }
 }
-
-.activeLoad {
-  opacity: 0;
-  visibility: hidden;
-}
-
 /* JS_drawer v1.1.0 ,2023 */
 /* create by syo motoyama*/
 /* support by studio99.99(https://studio9999.com/) and CRAFT STUDIO SORA(https://cssora.net/) */
@@ -1022,6 +1072,14 @@ img {
        object-position: 100% 35%;
   }
 }
+@media (max-width: 800px) {
+  .swiper01 .swiper-slide img {
+    -o-object-fit: none;
+       object-fit: none;
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
+  }
+}
 .swiper01 .swiper-wrapper .swiper-slide {
   position: relative;
 }
@@ -1124,7 +1182,6 @@ img {
   top: -8%;
   width: 145px;
   z-index: 50;
-  animation: slideinLeft 3s infinite;
 }
 @media (max-width: 500px) {
   .sec01fbWrapper .sec01fb img {
@@ -1132,6 +1189,9 @@ img {
     left: -15%;
     top: -15%;
   }
+}
+.sec01fbWrapper .sec01fbAni {
+  animation: slideinLeft 3s forwards;
 }
 @keyframes slideinLeft {
   0% {
@@ -2126,7 +2186,7 @@ img {
 }
 #sec04 ul .sec04wrapper .sec04box02 .sec04BlockNone .sec04textLink div {
   padding: 0.1rem;
-  background-color: #E9D779;
+  background-color: #cfb790;
   display: inline-block;
   width: 10rem;
   text-align: center;
@@ -2208,7 +2268,7 @@ img {
 }
 #sec04 ul .sec04NoneBlock .sec04textLink div {
   padding: 0.1rem;
-  background-color: #E9D779;
+  background-color: #cfb790;
   display: inline-block;
   width: 10rem;
   text-align: center;
@@ -2331,7 +2391,7 @@ img {
 }
 .sec04reverse02 .sec04BlockNone .sec04textLink div {
   padding: 0.1rem;
-  background-color: #E9D779;
+  background-color: #cfb790;
   display: inline-block;
   width: 10rem;
   text-align: center;
@@ -2401,7 +2461,7 @@ img {
 }
 .sec04reverse02 .sec04NoneBlock .sec04textLink div {
   padding: 0.1rem;
-  background-color: #E9D779;
+  background-color: #cfb790;
   display: inline-block;
   width: 10rem;
   text-align: center;
