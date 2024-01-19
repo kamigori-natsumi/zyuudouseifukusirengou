@@ -42,7 +42,8 @@ function fadeinn() {
         const targetRect = target.getBoundingClientRect();
         if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
             target.classList.add('fadeinn');
-        } else {
+        } 
+        else {
             target.classList.remove('fadeinn');
         }
     });
@@ -56,9 +57,10 @@ function fadeinn() {
         const targetRect = target.getBoundingClientRect();
         if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
             target.classList.add('fadeinn');
-        } else {
-            target.classList.remove('fadeinn');
-        }
+        } 
+        // else {
+        //     target.classList.remove('fadeinn');
+        // }
     });
 };
 window.addEventListener('scroll', fadeinn);
