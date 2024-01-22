@@ -2475,7 +2475,7 @@ img {
     opacity: 0.8;
   }
   100% {
-    transform: translateX(-40px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -2485,7 +2485,7 @@ img {
     opacity: 0.8;
   }
   100% {
-    transform: translateX(40px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -2554,7 +2554,7 @@ img {
 #sec05 .sec05Head .sec05Mein .sec05MeinItem {
   animation: fuwawa 1.5s infinite alternate ease-in-out;
 }
-@keyframes fuwawa {
+frames fuwawa {
   0% {
     transform: translateY(0);
   }
