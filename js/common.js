@@ -1,10 +1,10 @@
 
-window.addEventListener('load', function () {
-    setTimeout(function(){   
-    let loadingBg = document.querySelector('.loadingWrapper');
-    loadingBg.classList.add('activeLoad');
-},3000);
-});
+// window.addEventListener('load', function () {
+//     setTimeout(function(){   
+//     let loadingBg = document.querySelector('.loadingWrapper');
+//     loadingBg.classList.add('activeLoad');
+// },3000);
+// });
 
 
 const faceBani = document.querySelector('.sec01fbanime');
