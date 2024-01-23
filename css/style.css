@@ -524,7 +524,7 @@ th {
 
 #drawerMenu02 ul {
   width: 160px;
-  top: 97px;
+  top: 115px;
   right: 5px;
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
@@ -768,7 +768,7 @@ th {
     display: block;
     width: 100vw;
     height: 100vh;
-    padding-top: 70px;
+    padding-top: 10px;
     background-color: var(--menuColor);
     overflow: hidden;
     text-align: center;
