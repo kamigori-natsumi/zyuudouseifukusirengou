@@ -524,7 +524,7 @@ th {
 
 #drawerMenu02 ul {
   width: 160px;
-  top: 39px;
+  top: 97px;
   right: 5px;
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
@@ -702,7 +702,7 @@ th {
   }
   .toggleButton {
     position: fixed;
-    top: 10px;
+    top: 5px;
     right: 10px;
     width: 40px;
     height: 40px;
@@ -808,7 +808,7 @@ html {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding-left: 1rem;
+  padding: 1rem 0.5rem;
 }
 @media (max-width: 800px) {
   .header {
@@ -824,14 +824,21 @@ html {
 }
 @media (max-width: 700px) {
   .header .Headerleft h1 {
-    width: 11.9rem;
+    width: 28rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 560px) {
+  .header .Headerleft h1 {
+    width: 21.5rem;
     display: flex;
     flex-wrap: wrap;
   }
 }
 @media (max-width: 450px) {
   .header .Headerleft h1 {
-    width: 7rem;
+    width: 14rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -839,19 +846,24 @@ html {
 .header .Headerleft .Headerlogo img {
   width: 2.5rem;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
+  .header .Headerleft .Headerlogo img {
+    width: 2.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .header .Headerleft .Headerlogo img {
+    width: 2.1rem;
+  }
+}
+@media (max-width: 800px) {
   .header .Headerleft .Headerlogo img {
     width: 2rem;
   }
 }
-@media (max-width: 700px) {
-  .header .Headerleft .Headerlogo img {
-    width: 3rem;
-  }
-}
 @media (max-width: 560px) {
   .header .Headerleft .Headerlogo img {
-    width: 2.5rem;
+    width: 2rem;
   }
 }
 @media (max-width: 450px) {
@@ -859,14 +871,19 @@ html {
     width: 2rem;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .header .Headerleft {
     font-size: 2rem;
   }
 }
+@media (max-width: 1000px) {
+  .header .Headerleft {
+    font-size: 1.6rem;
+  }
+}
 @media (max-width: 800px) {
   .header .Headerleft {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 560px) {
@@ -902,13 +919,18 @@ html {
 @media (max-width: 1100px) {
   .header .Headerright .Headerphonefax {
     display: flex;
+    gap: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .header .Headerright .Headerphonefax {
+    display: flex;
     gap: 0rem;
   }
 }
 @media (max-width: 450px) {
   .header .Headerright .Headerphonefax {
     display: flex;
-    flex-direction: column;
     gap: 0rem;
   }
 }
@@ -942,17 +964,21 @@ html {
   height: 3rem;
   margin: 1rem 0.3rem;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .header .Headerright .Headerphone .Headerphoneicon img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .header .Headerright .Headerphone .Headerphoneicon img {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 @media (max-width: 800px) {
   .header .Headerright .Headerphone .Headerphoneicon img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0.3rem;
+    display: none;
   }
 }
 .header .Headerright .Headerphone .Headerphonetext {
@@ -963,12 +989,17 @@ html {
 .header .Headerright .Headerphone .Headerphonetext p {
   font-size: 2rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .header .Headerright .Headerphone .Headerphonetext p {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+  .header .Headerright .Headerphone .Headerphonetext p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 800px) {
   .header .Headerright .Headerphone .Headerphonetext p {
     display: none;
   }
@@ -1003,17 +1034,21 @@ html {
   height: 3rem;
   margin: 1rem 0.3rem;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .header .Headerright .Headerfax .Headerfaxicon img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .header .Headerright .Headerfax .Headerfaxicon img {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 @media (max-width: 800px) {
   .header .Headerright .Headerfax .Headerfaxicon img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0.3rem;
+    display: none;
   }
 }
 .header .Headerright .Headerfax .Headerfaxtext {
@@ -1024,56 +1059,19 @@ html {
 .header .Headerright .Headerfax .Headerfaxtext p {
   font-size: 2rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .header .Headerright .Headerfax .Headerfaxtext p {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .header .Headerright .Headerfax .Headerfaxtext p {
-    display: none;
+    font-size: 1.3rem;
   }
-}
-.header .Headerright .Headerinquiry {
-  text-align: center;
-  background-color: #DAD0C1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
 }
 @media (max-width: 800px) {
-  .header .Headerright .Headerinquiry {
-    padding: 0, 5rem 0;
-  }
-}
-@media (max-width: 700px) {
-  .header .Headerright .Headerinquiry {
-    padding: 1rem 0;
-  }
-}
-.header .Headerright .Headerinquiry .Headerinquiryicon {
-  display: flex;
-  justify-content: center;
-  width: 2.5rem;
-  height: 3.125rem;
-}
-@media (max-width: 1300px) {
-  .header .Headerright .Headerinquiry .Headerinquiryicon {
-    width: 2rem;
-    height: 2rem;
-  }
-}
-@media (max-width: 700px) {
-  .header .Headerright .Headerinquiry .Headerinquiryicon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-@media (max-width: 1300px) {
-  .header .Headerright .Headerinquiry {
-    font-size: 0.5rem;
+  .header .Headerright .Headerfax .Headerfaxtext p {
+    display: none;
   }
 }
 
@@ -2803,14 +2801,14 @@ img {
 @media (max-width: 800px) {
   #sec05 .sec05Head .sec05Mein .sec05MeinKyoto {
     max-width: 150px;
-    top: -100px;
+    top: -70px;
     left: 45%;
   }
 }
 @media (max-width: 500px) {
   #sec05 .sec05Head .sec05Mein .sec05MeinKyoto {
     max-width: 100px;
-    top: -100px;
+    top: -60px;
     left: 45%;
   }
 }
@@ -3479,13 +3477,37 @@ footer .Footerright .Footerright2 .Footerfax .Footerfaxtext p:nth-child(2) {
 }
 #sec06 .sec06Wrapper .sec06titleBar {
   margin: 2rem auto;
-  width: 14rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 800px) {
+  #sec06 .sec06Wrapper .sec06titleBar {
+    width: 12rem;
+  }
+}
+@media (max-width: 500px) {
+  #sec06 .sec06Wrapper .sec06titleBar {
+    width: 9.6rem;
+  }
+}
+#sec06 .sec06Wrapper .sec06titleBar img {
+  vertical-align: top;
+}
 #sec06 .sec06Wrapper .sec06titleBar h2 {
-  font-size: 2rem;
-  padding: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  #sec06 .sec06Wrapper .sec06titleBar h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #sec06 .sec06Wrapper .sec06titleBar h2 {
+    font-size: 1.2rem;
+  }
 }
 #sec06 .sec06Wrapper form {
   max-width: 600px;
