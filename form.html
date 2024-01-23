@@ -11,11 +11,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="/img/Logo.png" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Logo.png">
 </head>
 
 <body>
-    
-    <header id="FormHeader">
+
+    <!-- ドロワーボタン -->
+    <button class="toggleButton">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- ドロワーメニュー -->
+    <nav id="drawerMenu02">
+        <ul class="Headerphonefax">
+            <li><a href="../#sec01">TOP</a></li>
+            <li><a href="../#facebook">Facebook</a></li>
+            <li><a href="../#sec0201">近畿柔道整復師<br>協同組合連合会</a></li>
+            <li><a href="../#sec0202">ご案内</a></li>
+            <li><a href="../#sec03">入会メリット</a></li>
+            <li><a href="../#sec0302">各府県</a></li>
+            <li><a href="company.html">協賛企業一覧</a></li>
+            <li><a href="form.html" class="Headerinquiry">
+                    <div class="Headerinquiryicon">
+                        <img src="img/Headermail.svg" alt="">
+                    </div>
+                    <div class="Headerinquirytext">
+                        <p>お問い合わせ</p>
+                    </div>
+
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="drawerMenu">
+        <ul class="Headerphonefax">
+            <li><a href="../#sec01">TOP</a></li>
+            <li><a href="../#facebook">Facebook</a></li>
+            <li><a href="../#sec0201">近畿柔道整復師<br>協同組合連合会</a></li>
+            <li><a href="../#sec0202">ご案内</a></li>
+            <li><a href="../#sec03">入会メリット</a></li>
+            <li><a href="../#sec0302">各府県</a></li>
+            <li><a href="company.html">協賛企業一覧</a></li>
+            <li><a href="form.html" class="Headerinquiry">
+                    <div class="Headerinquiryicon">
+                        <img src="img/Headermail.svg" alt="">
+                    </div>
+                    <div class="Headerinquirytext">
+                        <p>お問い合わせ</p>
+                    </div>
+                </a></li>
+            <li>
+                <div class="Headerphone">
+                    <div class="Headerphoneicon">
+                        <img src="img/Headerphone.svg" alt="">
+                    </div>
+                    <div class="Headerphonetext">
+                        <p>078-576-0989</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="Headerfax">
+                    <div class="Headerfaxicon">
+                        <img src="img/Header.svg" alt="">
+                    </div>
+                    <div class="Headerfaxtext">
+                        <p>078-576-4666</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="header">
         <div class="Headerleft">
             <div class="Headerlogo">
                 <img src="img/Logo.png" alt="">
@@ -26,14 +99,13 @@
         </div>
 
         <div class="Headerright">
-            <div class="Headerphonefax">
+            <!-- <div class="Headerphonefax">
                 <div class="Headerphone">
                     <div class="Headerphoneicon">
                         <img src="img/Headerphone.svg" alt="">
                     </div>
                     <div class="Headerphonetext">
                         <p>078-576-0989</p>
-
                     </div>
                 </div>
 
@@ -43,13 +115,12 @@
                     </div>
                     <div class="Headerfaxtext">
                         <p>078-576-4666</p>
-
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
-            <a href="form.html" target="_blank" class="Headerinquiry">
+            <!-- <a href="form.html" target="_blank" class="Headerinquiry">
                 <div class="Headerinquiryicon">
                     <img src="img/Headermail.svg" alt="">
                 </div>
@@ -57,34 +128,21 @@
                     <p>お問い合わせ</p>
                 </div>
 
-            </a>
+            </a> -->
         </div>
     </header>
 
 
 
-
-    <section id="sec01">
-        <div class="swiper01">
-            <div class="swiper-wrapper">
-                <!-- Slides Swiperさせる画像を入れる-->
-                <div class="swiper-slide"><img src="img/sec01_1.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/sec01_2.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/sec01_3.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/sec01_4.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/sec01_5.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/sec01_6.png" alt=""></div>
-            </div>
-            <h2>近畿柔道整復師協同組合連合会</h2>
-            <div id="sec01Hand">
-                <div class="sec01topdown"><img src="img/sec01TopdownHand.png" alt=""></div>
-                <div class="sec01bottomup"><img src="img/sec01BottomupHand.png" alt=""></div>
-            </div>
-        </div>
+    <section class="sec06mainVisual">
+        <div><img src="img/sec01_1.png" alt="メインビジュアル"></div>
+        <h2>近畿柔道整復師<br>協同組合連合会</h2>
     </section>
 
 
 
+
+    <!-- お問い合わせ -->
     <section id="sec06">
         <div class="sec06Wrapper">
             <div class="sec06titleBar">
@@ -151,6 +209,8 @@
         </div>
     </section>
 
+
+    <!-- footerここから -->
     <footer>
         <div class="Footerleft">
 
