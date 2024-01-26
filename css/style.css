@@ -1899,6 +1899,8 @@ body {
   #sec03 h2 {
     font-size: 1.2rem;
     max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
   }
 }
 #sec03 .sec03Line01 {
