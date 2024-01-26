@@ -1619,15 +1619,22 @@ img {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 2rem;
+  text-align: center;
 }
 @media (max-width: 800px) {
   #sec0201 #sec0202 .sec02HeadText h3 {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 650px) {
+  #sec0201 #sec0202 .sec02HeadText h3 {
+    width: 21rem;
+  }
+}
 @media (max-width: 500px) {
   #sec0201 #sec0202 .sec02HeadText h3 {
     font-size: 1rem;
+    width: 17rem;
   }
 }
 #sec0201 #sec0202 .sec02HeadText p {
@@ -1900,7 +1907,6 @@ body {
     font-size: 1.2rem;
     max-width: 300px;
     margin: 0 auto;
-    padding-bottom: 2rem;
   }
 }
 #sec03 .sec03Line01 {
@@ -1914,6 +1920,7 @@ body {
 @media (max-width: 500px) {
   #sec03 .sec03Line01 {
     width: 20rem;
+    padding-bottom: 2rem;
   }
 }
 #sec03 .sec03Line01 img {
