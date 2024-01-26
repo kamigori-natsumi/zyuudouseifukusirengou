@@ -395,7 +395,7 @@ th {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(../img/loadingBackImg.jpg);
+  background-color: #EDE3D3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,6 +416,10 @@ th {
 .loadingWrapper .loaderContainer .loadingBackImg {
   width: 100%;
   height: 100vh;
+  background-image: url(../img/loadingBackImg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .loadingWrapper .loaderContainer .loadingBackImg .wheel {
   position: absolute;
@@ -1300,28 +1304,36 @@ img {
 }
 
 #sec01Text {
-  max-width: 45rem;
-  margin: 5rem auto;
+  background-image: url(../img/sec02Kinkikids.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4rem auto;
+  padding: 5rem 0 10rem;
+  line-height: 1.5rem;
   position: relative;
-  z-index: 10;
 }
-#sec01Text h2 {
+#sec01Text .sec01TextMore {
+  position: relative;
+  z-index: 100;
+}
+#sec01Text .sec01TextMore h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   font-weight: 600;
 }
 @media (max-width: 800px) {
-  #sec01Text h2 {
+  #sec01Text .sec01TextMore h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 500px) {
-  #sec01Text h2 {
+  #sec01Text .sec01TextMore h2 {
     font-size: 1.2rem;
   }
 }
-#sec01Text p {
+#sec01Text .sec01TextMore p {
   margin: 0 auto;
   max-width: 600px;
   font-size: 1rem;
@@ -1329,8 +1341,147 @@ img {
   line-height: 1.5rem;
 }
 @media (max-width: 800px) {
-  #sec01Text p {
+  #sec01Text .sec01TextMore p {
     padding: 0 3rem 2rem;
+  }
+}
+#sec01Text .sec02MeinItem {
+  animation: fuwawa 1.5s infinite alternate ease-in-out;
+}
+@keyframes fuwawa {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@media (max-width: 800px) {
+  #sec01Text {
+    padding-top: 10rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  #sec01Text {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+#sec01Text .sec02MeinHyogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sec01Text .sec02MeinHyogo img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  #sec01Text .sec02MeinHyogo {
+    max-width: 150px;
+    top: 80px;
+    left: 5%;
+  }
+}
+@media (max-width: 500px) {
+  #sec01Text .sec02MeinHyogo {
+    max-width: 100px;
+    top: 50px;
+    left: 5%;
+  }
+}
+#sec01Text .sec02MeinKyoto {
+  position: absolute;
+  top: -45px;
+  left: 55%;
+  animation-delay: 0.5s;
+}
+#sec01Text .sec02MeinKyoto img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  #sec01Text .sec02MeinKyoto {
+    max-width: 150px;
+    top: 10px;
+    left: 50%;
+  }
+}
+@media (max-width: 500px) {
+  #sec01Text .sec02MeinKyoto {
+    max-width: 100px;
+    top: -10px;
+    left: 45%;
+  }
+}
+#sec01Text .sec02MeinSiga {
+  position: absolute;
+  top: 70px;
+  left: 80%;
+  animation-delay: 0.3s;
+}
+#sec01Text .sec02MeinSiga img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  #sec01Text .sec02MeinSiga {
+    max-width: 150px;
+    top: 100px;
+    right: 5%;
+  }
+}
+@media (max-width: 500px) {
+  #sec01Text .sec02MeinSiga {
+    max-width: 100px;
+    top: 70px;
+    right: 5%;
+  }
+}
+#sec01Text .sec02MeinNara {
+  position: absolute;
+  top: 400px;
+  left: 90%;
+  animation-delay: 0.9s;
+}
+#sec01Text .sec02MeinNara img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  #sec01Text .sec02MeinNara {
+    max-width: 100px;
+    top: 480px;
+    left: 80%;
+  }
+}
+@media (max-width: 500px) {
+  #sec01Text .sec02MeinNara {
+    max-width: 100px;
+    top: 300px;
+    left: 70%;
+  }
+}
+#sec01Text .sec02MeinWakayama {
+  position: absolute;
+  top: 400px;
+  left: 5%;
+  animation-delay: 1s;
+}
+#sec01Text .sec02MeinWakayama img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  #sec01Text .sec02MeinWakayama {
+    max-width: 150px;
+    top: 400px;
+    left: 15%;
+  }
+}
+@media (max-width: 500px) {
+  #sec01Text .sec02MeinWakayama {
+    max-width: 100px;
+    top: 400px;
+    left: 15%;
   }
 }
 
@@ -1409,226 +1560,6 @@ img {
 #sec0201 .sec02bg img {
   width: 100%;
 }
-#sec0201 .sec02Head {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-#sec0201 .sec02Head .sec02HeadText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02HeadText {
-    margin: 0 auto;
-  }
-}
-#sec0201 .sec02Head .sec02HeadText .sec02HeadTextTitle {
-  max-width: 560px;
-}
-#sec0201 .sec02Head .sec02HeadText .sec02HeadTextTitle h2 {
-  color: #000;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02HeadText .sec02HeadTextTitle h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02HeadText .sec02HeadTextTitle h2 {
-    font-size: 1.2rem;
-  }
-}
-#sec0201 .sec02Head .sec02HeadText .sec02Line01 {
-  margin: 0;
-}
-#sec0201 .sec02Head .sec02HeadText .sec02Line01 img {
-  vertical-align: top;
-  width: 600px;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02HeadText .sec02Line01 img {
-    width: 23.5rem;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02HeadText .sec02Line01 img {
-    width: 19rem;
-  }
-}
-#sec0201 .sec02Head .sec02Mein {
-  position: relative;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinItem {
-  animation: fuwawa 1.5s infinite alternate ease-in-out;
-}
-@keyframes fuwawa {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(30px);
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinText {
-  background-image: url(../img/sec02Kinkikids.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 600px;
-  margin: 10rem auto;
-  padding: 15rem 0;
-  line-height: 1.5rem;
-  position: relative;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinText {
-    padding-top: 10rem;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinText {
-    padding-top: 2rem;
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinText p {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 100;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinText {
-    margin: 0 2rem auto;
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-  }
-  #sec0201 .sec02Head .sec02Mein .sec02MeinText p {
-    max-width: 350px;
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinHyogo {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinHyogo img {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinHyogo {
-    max-width: 150px;
-    top: 150px;
-    left: 5%;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinHyogo {
-    max-width: 100px;
-    top: 50px;
-    left: 5%;
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinKyoto {
-  position: absolute;
-  top: -250px;
-  left: 45%;
-  animation-delay: 0.5s;
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinKyoto img {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinKyoto {
-    max-width: 150px;
-    top: -100px;
-    left: 45%;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinKyoto {
-    max-width: 100px;
-    top: -100px;
-    left: 45%;
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinSiga {
-  position: absolute;
-  top: -100px;
-  left: 80%;
-  animation-delay: 0.3s;
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinSiga img {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinSiga {
-    max-width: 150px;
-    top: -10px;
-    right: 5%;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinSiga {
-    max-width: 100px;
-    top: 0;
-    right: 5%;
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinNara {
-  position: absolute;
-  top: 400px;
-  left: 90%;
-  animation-delay: 0.9s;
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinNara img {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinNara {
-    max-width: 100px;
-    top: 400px;
-    left: 70%;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinNara {
-    max-width: 100px;
-    top: 300px;
-    left: 70%;
-  }
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinWakayama {
-  position: absolute;
-  top: 400px;
-  left: 5%;
-  animation-delay: 1s;
-}
-#sec0201 .sec02Head .sec02Mein .sec02MeinWakayama img {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinWakayama {
-    max-width: 150px;
-    top: 400px;
-    left: 15%;
-  }
-}
-@media (max-width: 500px) {
-  #sec0201 .sec02Head .sec02Mein .sec02MeinWakayama {
-    max-width: 100px;
-    top: 300px;
-    left: 15%;
-  }
-}
 #sec0201 #sec0202 {
   background-color: #ffffff;
   position: relative;
@@ -1683,6 +1614,22 @@ img {
     width: 14rem;
   }
 }
+#sec0201 #sec0202 .sec02HeadText h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  #sec0201 #sec0202 .sec02HeadText h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  #sec0201 #sec0202 .sec02HeadText h3 {
+    font-size: 1rem;
+  }
+}
 #sec0201 #sec0202 .sec02HeadText p {
   max-width: 600px;
   line-height: 1.5rem;
@@ -1723,25 +1670,25 @@ img {
 }
 @media (max-width: 1000px) {
   #sec0201 #sec0202 .sec02Fukida01 {
-    top: 300px;
+    top: 450px;
     left: 0;
   }
 }
 @media (max-width: 800px) {
   #sec0201 #sec0202 .sec02Fukida01 {
-    top: 400px;
+    top: 560px;
     left: 0;
   }
 }
 @media (max-width: 500px) {
   #sec0201 #sec0202 .sec02Fukida01 {
-    top: 600px;
+    top: 720px;
     left: 0;
   }
 }
 @media (max-width: 400px) {
   #sec0201 #sec0202 .sec02Fukida01 {
-    top: 660px;
+    top: 800px;
     left: 0;
   }
 }
@@ -1951,6 +1898,7 @@ body {
 @media (max-width: 500px) {
   #sec03 h2 {
     font-size: 1.2rem;
+    max-width: 300px;
   }
 }
 #sec03 .sec03Line01 {
@@ -2304,7 +2252,7 @@ img {
 }
 @media (max-width: 500px) {
   #sec04 ul .sec04wrapper .sec04box01 {
-    padding: 3rem 1rem 1rem;
+    padding: 3rem 1rem 2rem;
     align-items: center;
   }
 }
@@ -2330,6 +2278,9 @@ img {
 }
 #sec04 ul .sec04wrapper .sec04box01 p {
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #sec04 ul .sec04wrapper .sec04box02 {
   display: flex;
@@ -2402,6 +2353,9 @@ img {
   text-align: left;
   padding: 2rem 2rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   #sec04 ul .sec04wrapper .sec04box02text {
@@ -2473,7 +2427,7 @@ img {
 }
 @media (max-width: 500px) {
   .sec04reverse01 {
-    padding: 3rem 1rem 1rem;
+    padding: 3rem 1rem 2rem;
     align-items: center;
   }
 }
@@ -2499,6 +2453,9 @@ img {
 }
 .sec04reverse01 p {
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sec04reverse02 {
@@ -3201,6 +3158,11 @@ footer .Footerright .Footerright2 .Footerfax .Footerfaxtext p:nth-child(2) {
   footer .Footerright .Footerright2 .Footerfax .Footerfaxtext p:nth-child(2) {
     font-size: 1rem;
   }
+}
+
+.footerForm,
+.footerCampany {
+  justify-content: center;
 }
 
 #FormHeader {
