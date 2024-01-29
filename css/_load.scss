@@ -1,0 +1,128 @@
+.loadingWrapper {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #EDE3D3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+
+    .loaderContainer {
+        width: 29%;
+        min-width: 100%;
+        min-height: 100vh;
+        border-radius: 4px;
+        box-shadow: 0 16px 12px -8px #00000020;
+        position: fixed;
+        z-index: 100000000;
+
+        .loadingBackImg {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/loadingBackImg.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .wheel {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                .arc {
+                    fill: none;
+                    stroke: #EDE3D3;
+                    stroke-width: 5000;
+                    stroke-dasharray: 0 1000;
+                    animation: drawArc 3s ease-in-out forwards;
+                }
+            }
+        }
+
+        .loadHand {
+            width: 100%; 
+            max-width: 2000px; 
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            z-index: 1000000; 
+
+            .loadHand01 {
+                max-width: 2000px;
+                animation: loading01 3s ease-in-out forwards;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .loadHand02 {
+                max-width: 2000px;
+                animation: loading02 3s ease-in-out forwards;
+                
+                img{
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:1300px) {
+                .loadHand01 {
+                    max-width: 800px;
+                }
+
+                .loadHand02 {
+                    max-width: 800px;
+                }
+            }
+        }
+    }
+}
+
+.activeLoad {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes drawArc {
+    to {
+        stroke-dasharray: 1000 1000;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading01 {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(-40px);
+        opacity: 1;
+    }
+}
+
+@keyframes loading02 {
+    0% {
+        transform: translateX(200px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(40px);
+        opacity: 1;
+    }
+}

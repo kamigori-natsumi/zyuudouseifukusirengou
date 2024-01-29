@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem 0.5rem;
+
+    @media (max-width:800px) {
+        padding-right: 4rem;
+    }
+
+    .Headerleft {
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Zen Old Mincho', serif;
+        gap: 0.2rem;
+
+        h1 {
+            @media (max-width:700px) {
+                width: 28rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width:560px) {
+                width: 21.5rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width:450px) {
+                width: 14rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        .Headerlogo {
+            img {
+                width: 2.5rem;
+
+                @media (max-width:1200px) {
+                    width: 2.5rem;
+                }
+
+                @media (max-width:1000px) {
+                    width: 2.1rem;
+                }
+
+                @media (max-width:800px) {
+                    width: 2rem;
+                }
+
+                @media (max-width:560px) {
+                    width: 2rem;
+                }
+
+                @media (max-width:450px) {
+                    width: 2rem;
+                }
+            }
+        }
+
+        @media (max-width:1200px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width:1000px) {
+            font-size: 1.6rem;
+        }
+
+        @media (max-width:800px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width:560px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width:450px) {
+            font-size: 1rem;
+        }
+    }
+
+    .Headerright {
+        display: flex;
+        gap: 1rem;
+        font-family: 'Zen Old Mincho', serif;
+
+        @media (max-width:700px) {
+            gap: 0.5rem;
+        }
+
+        .Headerphonefax {
+            display: flex;
+            gap: 1rem;
+
+            @media (max-width:1300px) {
+                display: flex;
+                gap: 1rem;
+            }
+
+            @media (max-width:1100px) {
+                display: flex;
+                gap: 1rem;
+            }
+
+            @media (max-width:800px) {
+                display: flex;
+                gap: 0rem;
+            }
+
+            @media (max-width:450px) {
+                display: flex;
+                gap: 0rem;
+            }
+        }
+
+        .Headerphone {
+            display: flex;
+            text-align: center;
+
+            @media (max-width:1100px) {
+                .Headerphoneicon:hover::before {
+                    content: "078-576-0989";
+                    position: absolute;
+                    background-color: #f6efe4e5;
+                    color: #000;
+                    padding: 8px;
+                    border-radius: 10px;
+                    top: 10px;
+                    left: 80%;
+                    transform: translateX(-50%);
+                    white-space: nowrap;
+                    transition: opacity 0.5s ease;
+                    pointer-events: none;
+                    z-index: 100000000;
+                }
+            }
+
+            .Headerphoneicon {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 2.5rem;
+                    height: 3rem;
+                    margin: 1rem 0.3rem;
+
+                    @media (max-width:1200px) {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    @media (max-width:1000px) {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+
+                    @media (max-width:800px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .Headerphonetext {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    font-size: 2rem;
+
+                    @media (max-width:1200px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media (max-width:1000px) {
+                        font-size: 1.3rem;
+                    }
+
+                    @media (max-width:800px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .Headerfax {
+            display: flex;
+            text-align: center;
+
+            @media (max-width:1100px) {
+                .Headerfaxicon:hover::before {
+                    content: "078-576-4666";
+                    position: absolute;
+                    background-color: #f6efe4e5;
+                    color: #000;
+                    padding: 8px;
+                    border-radius: 10px;
+                    left: 80%;
+                    top: 30px;
+                    transform: translateX(-50%);
+                    white-space: nowrap;
+                    transition: opacity 5s ease;
+                    pointer-events: none;
+                    z-index: 100000000;
+                }
+            }
+
+            .Headerfaxicon {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 2.5rem;
+                    height: 3rem;
+                    margin: 1rem 0.3rem;
+
+                    @media (max-width:1200px) {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    @media (max-width:1000px) {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+
+                    @media (max-width:800px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .Headerfaxtext {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    font-size: 2rem;
+
+                    @media (max-width:1200px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media (max-width:1000px) {
+                        font-size: 1.3rem;
+                    }
+
+                    @media (max-width:800px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

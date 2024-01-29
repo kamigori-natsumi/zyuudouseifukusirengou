@@ -429,13 +429,9 @@ th {
 .loadingWrapper .loaderContainer .loadingBackImg .wheel .arc {
   fill: none;
   stroke: #EDE3D3;
-  /* アークの色 */
   stroke-width: 5000;
-  /* アークの太さ */
   stroke-dasharray: 0 1000;
-  /* 初期状態: 線が表示されていない */
   animation: drawArc 3s ease-in-out forwards;
-  /* アニメーション時間: 3秒 */
 }
 .loadingWrapper .loaderContainer .loadHand {
   width: 100%;
@@ -480,7 +476,6 @@ th {
 @keyframes drawArc {
   to {
     stroke-dasharray: 1000 1000;
-    /* アークの長さ: 100% */
   }
 }
 @keyframes spin {
@@ -549,12 +544,10 @@ th {
 #drawerMenu02 a {
   display: block;
   padding: 0.7rem;
-  /* マウスが反応する範囲を少し広げている*/
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
 
-/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
 #drawerMenu02 ul:has(a:hover) a:not(:hover) {
   opacity: 0.3;
 }
@@ -638,12 +631,10 @@ th {
 #drawerMenu a {
   display: block;
   padding: 0.7rem;
-  /* マウスが反応する範囲を少し広げている*/
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
 
-/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
 #drawerMenu ul:has(a:hover) a:not(:hover) {
   opacity: 0.3;
 }
@@ -700,7 +691,6 @@ th {
   }
 }
 @media (max-width: 800px) {
-  /* メディアクエリの値はお好みで */
   #drawerMenu {
     display: block;
   }
@@ -711,7 +701,6 @@ th {
     width: 40px;
     height: 40px;
     display: block;
-    /* display:none;を解除するために入れている */
     background: var(--drawerColor);
     border-radius: 5px;
     z-index: 100000;
@@ -802,7 +791,6 @@ th {
     line-height: 1;
   }
 }
-/* width <= 800px */
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -1546,7 +1534,6 @@ img {
   transform: translate(-50%, -50%);
 }
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 #sec0201 {
   height: auto;
   position: relative;

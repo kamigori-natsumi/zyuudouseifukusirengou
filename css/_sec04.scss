@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+:root {
+    background-color: #F6EFE4;
+}
+
+img {
+    width: 100%;
+}
+
+.sec04contentsWrapper {
+    position: relative;
+    font-family: 'Klee One', cursive;
+}
+
+.sec04backImg01 {
+    position: absolute;
+    top: 800px;
+}
+
+.sec04backImg02 {
+    position: absolute;
+    top: 3300px;
+}
+
+#sec04 {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+
+    ul {
+        .sec04title {
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 40px;
+            text-shadow: 0rem 0.2rem 0.5rem #00000050;
+            margin-bottom: 4rem;
+            margin-left: 10%;
+
+            @media (max-width:800px) {
+                padding-bottom: 5%;
+                text-align: center;
+                font-size: 1.5rem;
+                margin-left: 0%;
+            }
+
+            @media (max-width:500px) {
+                font-size: 1.2rem;
+                padding-bottom: 1.5rem;
+                padding-top: 2rem;
+                margin-left: 0%;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .sec04wrapper {
+            border: 20px solid #fff;
+            box-sizing: border-box;
+            max-width: 700px;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 10rem;
+
+            @media (max-width:800px) {
+                border: 10px solid #fff;
+                margin-bottom: 12rem;
+            }
+
+            @media (max-width:500px) {
+                border: 5px solid #fff;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+
+            .sec04box01 {
+                display: flex;
+                gap: 1rem;
+                padding: 2rem 2rem;
+                width: 100%;
+                flex-basis: auto;
+
+                @media (max-width:800px) {
+                    flex-direction: column;
+                }
+
+                @media (max-width:500px) {
+                    padding: 3rem 1rem 2rem;
+                    align-items: center;
+                }
+
+                img {
+                    max-width: 300px;
+                    width: 50%;
+                    height: auto;
+                    margin-left: -20%;
+                    margin-top: -15%;
+                    object-fit: contain;
+
+                    @media (max-width:800px) {
+                        margin-top: -40%;
+                    }
+
+                    @media (max-width:500px) {
+                        margin-left: 0%;
+                        margin-top: -25%;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .sec04box02 {
+                display: flex;
+
+                @media (max-width:800px) {
+                    flex-direction: column;
+                }
+
+                // 【リンク先への写真、兵庫、奈良、和歌山 500px以上の場合】
+                .sec04BlockNone:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.5s ease;
+                }
+
+                .sec04BlockNone {
+                    margin-bottom: -10%;
+                    margin-right: -20%;
+                    border: 25px solid white;
+                    position: relative;
+                    align-self: center;
+                    box-sizing: border-box;
+
+                    @media (max-width:800px) {
+                        max-width: 350px;
+                        margin-bottom: -20%;
+                        margin-right: -40%;
+                        border: 15px solid white;
+                    }
+
+                    @media (max-width:500px) {
+                        width: 80%;
+                        margin: 0 auto;
+                        border: 5px solid white;
+                        display: none;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+
+                    .sec04textLink {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: fit-content;
+
+                        .sec04Clik {
+                            width: 18rem;
+                            height: auto;
+                            text-align: center;
+                            padding: 1rem;
+                            color: #fff;
+                            font-family: 'Zen Old Mincho', serif;
+                            border-top: 2px solid #fff;
+                            border-bottom: 2px solid #fff;
+                            font-size: 1.2rem;
+
+                            @media (max-width:500px) {
+
+                                border-top: 1px solid #fff;
+                                border-bottom: 1px solid #fff;
+                                width: 100%;
+                                padding: 0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sec04box02text {
+                text-align: left;
+                padding: 2rem 2rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width:500px) {
+                    padding: 0rem 1rem 1rem;
+                }
+            }
+        }
+
+        // 【リンク先への写真、兵庫、奈良、和歌山 500px未満の場合】
+        .sec04NoneBlock:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+
+        .sec04NoneBlock {
+            border: 20px solid white;
+            position: relative;
+            align-self: center;
+            display: none;
+
+            @media (max-width:500px) {
+                max-width: 90%;
+                margin: 0 auto 2rem;
+                border: 5px solid white;
+                display: block;
+            }
+
+            img {
+                object-fit: contain;
+            }
+
+            .sec04textLink {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: fit-content;
+                overflow: hidden;
+
+                .sec04Clik {
+                    width: 12.5rem;
+                    text-align: center;
+                    padding: 1rem;
+                    color: #fff;
+                    font-family: 'Zen Old Mincho', serif;
+                    border-top: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+
+                    @media (max-width:500px) {
+                        font-size: 1rem;
+                        border-top: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        padding: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec04reverse01 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    padding: 2rem 2rem;
+
+    @media (max-width:800px) {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    @media (max-width:500px) {
+        padding: 3rem 1rem 2rem;
+        align-items: center;
+    }
+
+    img {
+        max-width: 300px;
+        width: 50%;
+        height: auto;
+        margin-right: -20%;
+        margin-top: -15%;
+        object-fit: contain;
+
+        @media (max-width:800px) {
+            margin-top: -40%;
+        }
+
+        @media (max-width:500px) {
+            margin-right: 0%;
+            margin-top: -25%;
+        }
+    }
+
+    p {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sec04reverse02 {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @media (max-width:800px) {
+        flex-direction: column;
+    }
+
+    // 【リンク先への写真、京都、滋賀 500px以上の場合】
+    .sec04BlockNone:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+    }
+
+    .sec04BlockNone {
+        margin-bottom: -10%;
+        margin-left: -20%;
+        border: 25px solid white;
+        position: relative;
+        align-self: center;
+
+        @media (max-width:800px) {
+            max-width: 350px;
+            margin-bottom: -20%;
+            margin-left: -40%;
+            border: 15px solid white;
+        }
+
+        @media (max-width:500px) {
+            width: 80%;
+            margin: 0 auto;
+            border: 5px solid white;
+            display: none;
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+        .sec04textLink {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: fit-content;
+
+            .sec04Clik {
+                width: 18rem;
+                height: auto;
+                text-align: center;
+                padding: 1rem;
+                color: #fff;
+                font-family: 'Zen Old Mincho', serif;
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                font-size: 1.2rem;
+
+                @media (max-width:500px) {
+                    font-size: 1rem;
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    width: 100%;
+                    padding: 0.6rem;
+                }
+            }
+        }
+    }
+
+    // 【リンク先への写真、京都、滋賀 500px未満の場合】
+    .sec04NoneBlock:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+    }
+
+    .sec04NoneBlock {
+        border: 40px solid white;
+        position: relative;
+        align-self: center;
+        display: none;
+
+        @media (max-width:500px) {
+            width: 70%;
+            margin: 0 auto 2rem;
+            border: 5px solid white;
+            display: block;
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+        .sec04textLink {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: fit-content;
+
+            .sec04Clik {
+                width: 12.5rem;
+                text-align: center;
+                padding: 1rem;
+                color: #fff;
+                font-family: 'Zen Old Mincho', serif;
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+
+                @media (max-width:500px) {
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    width: 100%;
+                    padding: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+.sec04Hand {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    .sec04Hand01 {
+        animation: slidein01 1.5s ease-in-out forwards;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .sec04Hand02 {
+        animation: slidein02 1.5s ease-in-out forwards;
+    }
+}
+
+@keyframes slidein01 {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein02 {
+    0% {
+        transform: translateX(200px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

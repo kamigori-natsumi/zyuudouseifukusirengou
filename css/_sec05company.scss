@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+#sec05 {
+    height: auto;
+    position: relative;
+    font-family: 'Klee One', cursive;
+
+    .sec05Head {
+        max-width: 1400px;
+        margin: 2rem auto;
+
+        .sec05HeadText {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 100;
+
+            @media (max-width:500px) {
+                margin: 0 auto;
+            }
+
+            .sec05HeadTextTitle {
+                max-width: 600px;
+
+                h2 {
+                    color: #000;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+
+                    @media (max-width:800px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media (max-width:500px) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .sec05Line01 {
+                margin: 0;
+
+                img {
+                    vertical-align: top;
+                    width: 320px;
+
+                    @media (max-width:800px) {
+                        width: 11rem;
+                    }
+
+                    @media (max-width:500px) {
+                        width: 9.2rem;
+                    }
+                }
+            }
+        }
+
+        .sec05Mein {
+            position: relative;
+            max-width: 1500px;
+            margin: 0 auto;
+
+            .sec05MeinItem {
+                animation: fuwawa 1.5s infinite alternate ease-in-out;
+            }
+
+            @keyframes fuwawa {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(30px)
+                }
+            }
+
+            .sec05MeinText {
+                background-image: url(../img/sec02Kinkikids.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 15rem 0;
+                line-height: 1.5rem;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                p {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    position: relative;
+                    z-index: 100;
+                    padding: 0.5rem 2rem;
+                    background-color: #DAD0C1;
+                    border: solid 5px #FFF;
+                    border-radius: 10px;
+                }
+
+                @media (max-width:800px) {
+                    margin: 0 2rem auto;
+                    padding-top: 10rem;
+                    max-width: 600px;
+
+                    p {
+                        max-width: 350px;
+                    }
+                }
+
+                @media (max-width:500px) {
+                    padding-top: 2rem;
+                }
+            }
+
+            .sec05MeinHyogo {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                img {
+                    width: 100%;
+                }
+
+                @media (max-width:800px) {
+                    max-width: 150px;
+                    top: 150px;
+                    left: 5%;
+                }
+
+                @media (max-width:500px) {
+                    max-width: 100px;
+                    top: 50px;
+                    left: 5%;
+                }
+            }
+
+            .sec05MeinKyoto {
+                position: absolute;
+                top: -80px;
+                left: 60%;
+                animation-delay: .5s;
+
+                img {
+                    width: 100%;
+                }
+
+                @media (max-width:800px) {
+                    max-width: 150px;
+                    top: -70px;
+                    left: 45%;
+                }
+
+                @media (max-width:500px) {
+                    max-width: 100px;
+                    top: -60px;
+                    left: 45%;
+                }
+            }
+
+            .sec05MeinSiga {
+                position: absolute;
+                top: 140px;
+                left: 80%;
+                animation-delay: .3s;
+
+                img {
+                    width: 100%;
+                }
+
+                @media (max-width:800px) {
+                    max-width: 150px;
+                    top: -10px;
+                    right: 5%;
+                }
+
+                @media (max-width:500px) {
+                    max-width: 100px;
+                    top: 0;
+                    right: 5%;
+                }
+            }
+
+            .sec05MeinNara {
+                position: absolute;
+                top: 400px;
+                left: 90%;
+                animation-delay: .9s;
+
+                img {
+                    width: 100%;
+                }
+
+                @media (max-width:800px) {
+                    max-width: 100px;
+                    top: 400px;
+                    left: 70%;
+                }
+
+                @media (max-width:500px) {
+                    max-width: 100px;
+                    top: 200px;
+                    left: 70%;
+                }
+            }
+
+            .sec05MeinWakayama {
+                position: absolute;
+                top: 400px;
+                left: 5%;
+                animation-delay: 1s;
+
+                img {
+                    width: 100%;
+                }
+
+                @media (max-width:800px) {
+                    max-width: 150px;
+                    top: 400px;
+                    left: 15%;
+                }
+
+                @media (max-width:500px) {
+                    max-width: 100px;
+                    top: 200px;
+                    left: 15%;
+                }
+            }
+        }
+    }
+}
